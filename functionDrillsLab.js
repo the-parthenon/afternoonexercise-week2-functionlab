@@ -85,7 +85,16 @@ const greeting = function (name) {
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
+function add(num1, num2) {
+  num1 = Number(num1);
+  num2 = Number(num2);
+  // addedNums = num1 + num2;
+  // return addedNums;
+  return num1 + num2;
+}
+// const sum = add(4, 7);
+// console.log(sum);
+// console.log(add(4, 7));
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -100,7 +109,8 @@ const exclaim = function (str) {
 
 // arrow
 // declaration
-// expression
+// expression;
+// Expression was the syntax that was used.
 
 ////////////////// PROBLEM 8 ////////////////////
 
@@ -113,7 +123,7 @@ const exclaimTwo = (str) => {
   return str.toUpperCase() + '!!!';
 };
 
-// arrow
+// arrow **IT WAS THIS ONE**
 // declaration
 // expression
 
@@ -123,6 +133,9 @@ const exclaimTwo = (str) => {
 
   Brownie points if you use a template string
 */
+
+const exclaimThree = (str) => `${str.toUpperCase()}!!!`;
+// console.log(exclaimThree('wow, i cannot believe that worked'));
 
 ////////////////// PROBLEM 9 ////////////////////
 
@@ -136,7 +149,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+// declaration **This one was the one used**
 // expression
 
 ////////////////// PROBLEM 10 ////////////////////
