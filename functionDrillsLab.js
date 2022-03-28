@@ -34,7 +34,10 @@ const jsNinja = () => {
   Call the function, passing in an argument.
 */
 
-//CODE HERE
+const printName = (personsName) => {
+  console.log(personsName);
+};
+// printName('Eric');
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -47,7 +50,12 @@ const jsNinja = () => {
   Make sure to call your function and pass in an argument.
 */
 
-//CODE HERE
+const greeting = function (name) {
+  String(name);
+  console.log(`Hello, ${name}!`);
+};
+
+// greeting('Bob');
 
 ////////////////// PROBLEM 5 ////////////////////
 
@@ -60,7 +68,14 @@ const jsNinja = () => {
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
+// const compareNums = (num1, num2) => {
+//   if (num1 > num2) {
+//     return num1;
+//   } else {
+//     return num2;
+//   }
+// };
+// console.log(compareNums(4, 6));
 
 ////////////////// PROBLEM 6 ////////////////////
 /*
