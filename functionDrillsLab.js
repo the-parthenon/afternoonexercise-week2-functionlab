@@ -161,7 +161,17 @@ function exclaimFour(str) {
   Create a variable called 'nameGreeting' and set it equal to your function invoked (called) passing in an argument.
 */
 
-//CODE HERE
+// function nameCheck(name) {
+//   if (name === 'Steven') {
+//     return 'What is up Steven?';
+//   } else if (name === 'Bryan') {
+//     return 'Hey Bryan!';
+//   } else {
+//     return `Cool name, ${name}`;
+//   }
+// }
+// const nameGreeting = nameCheck('Eric');
+// console.log(nameGreeting);
 
 ////////////////// PROBLEM 11 ////////////////////
 /*
@@ -173,7 +183,20 @@ function exclaimFour(str) {
   Create a variable called 'colorRating' and set it equal to faveColorFinder invoked (called), passing in an argument.
 */
 
-//CODE HERE
+// const faveColorFinder = (color) => {
+//   if (color === 'red') {
+//     return 'Red is a great color.';
+//   } else if (color === 'green') {
+//     return 'Green is a solid favorite color.';
+//   } else if (color === 'black') {
+//     return 'So trendy!';
+//   } else {
+//     return 'You need to evaluate your favorite color choice.';
+//   }
+// };
+
+// const colorRating = faveColorFinder('orangey-red');
+// console.log(colorRating);
 
 ////////////////// PROBLEM 12 ////////////////////
 let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl'];
@@ -182,8 +205,6 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl'];
   Using a for loop, iterate over that array and console log each name.
   Call the function, passing in the `namesArr` array (above).
 */
-
-//CODE HERE
 
 ////////////////// PROBLEM 13 ////////////////////
 /*
