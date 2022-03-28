@@ -206,6 +206,14 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl'];
   Call the function, passing in the `namesArr` array (above).
 */
 
+function printAllNames(arrayOfNames) {
+  for (i = 0; i < arrayOfNames.length; i++) {
+    console.log(arrayOfNames[i]);
+  }
+}
+
+// printAllNames(namesArr);
+
 ////////////////// PROBLEM 13 ////////////////////
 /*
   Create a function called thatsOdd that takes in a single argument (a number).
@@ -214,7 +222,16 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl'];
   Outside the function, create a variable called `oddChecker` and set it equal to your function invoked, making sure to pass in an argument.
 */
 
-//CODE HERE
+// const thatsOdd = (num1) => {
+//   if (num1 % 2 === 0) {
+//     return "That's not odd!";
+//   } else {
+//     return 'That is odd indeed!';
+//   }
+// };
+
+// const oddChecker = thatsOdd(45);
+// console.log(oddChecker);
 
 ////////////////// PROBLEM 14 ////////////////////
 
@@ -226,7 +243,8 @@ let namesArr = ['Cameron', 'Riley', 'Eric', 'Brenna', 'Karl'];
     we would expect the function to return 'Sharknado is the best movie ever!'
 */
 
-//CODE HERE
+// const bestMovie = (movieTitle) => `${movieTitle} is the best movie ever!`;
+// console.log(bestMovie("Jodorowsky's Dune"));
 
 ////////////////// PROBLEM 15 ////////////////////
 let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107];
@@ -239,7 +257,20 @@ let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107];
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-//CODE HERE
+const bigOrSmall = (arr) => {
+  let answers = [];
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i] > 100) {
+      answers.push('big');
+    } else if (arr[i] <= 100) {
+      answers.push('small');
+    }
+  }
+  return answers;
+};
+
+const arrayEvaluator = bigOrSmall(bigOrSmallArray);
+console.log(arrayEvaluator);
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = [
