@@ -290,16 +290,16 @@ let loser = 'Cato';
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-function theEliminator(alive, dead) {
-  for (i = 0; i < alive.length; i++) {
-    if (alive[i] === dead) {
-      alive.splice(i, 1);
-      return alive;
-    }
-  }
-}
+// function theEliminator(alive, dead) {
+//   for (i = 0; i < alive.length; i++) {
+//     if (alive[i] === dead) {
+//       alive.splice(i, 1);
+//       return alive;
+//     }
+//   }
+// }
 
-console.log(theEliminator(contestants, loser));
+// console.log(theEliminator(contestants, loser));
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = 'Hi, my name is Kylo.';
@@ -308,7 +308,12 @@ let sampleString = 'Hi, my name is Kylo.';
   Invoke the function, passing in the sampleString (above).
 */
 
-//CODE HERE
+const upperString = (str) => {
+  let upperStr = str.toUpperCase();
+  console.log(upperStr);
+};
+
+// upperString(sampleString);
 
 ////////////////// PROBLEM 18 ////////////////////
 /*
@@ -321,13 +326,28 @@ let sampleString = 'Hi, my name is Kylo.';
   return 'must provide a valid email address'
 */
 
+// const emailCheck = (email) => {
+//   email = String(email);
+//   email = email.trim();
+//   console.log(`${email}`);
+//   if (email.includes('@') === true) {
+//     return 'email verified';
+//   } else {
+//     return 'must provide a valid email address';
+//   }
+// };
+
+// console.log(emailCheck('     example@fakedomain.com    '));
+
 ////////////////// PROBLEM 19 ////////////////////
 /*
   Write a function, naming it whatever you believe to be appropriate, that buys as many chocolate frogs as possible with a certain amount of gold. Each chocolate frog costs 3 gold. Your function should take in a single parameter, which is the amount of gold you are willing to spend. Your function should return a total amount of chocolate frogs you were able to purchase.
   Create a variable called `totalFrogs` and set it equal to your function invoked, passing in the amount of gold you are willing to spend.
 */
 
-//CODE HERE
+// const maxFrogs = (gold) => Math.floor(gold / 3);
+// let totalFrogs = maxFrogs(17);
+// console.log(totalFrogs);
 
 ////////////////// PROBLEM 20 ////////////////////
 /*
