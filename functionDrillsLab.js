@@ -257,20 +257,20 @@ let bigOrSmallArray = [1, 101, 102, 2, 103, 4, 5, 6, 107];
   Return the answers array inside of the function to a variable called `arrayEvaluator`.
 */
 
-const bigOrSmall = (arr) => {
-  let answers = [];
-  for (i = 0; i < arr.length; i++) {
-    if (arr[i] > 100) {
-      answers.push('big');
-    } else if (arr[i] <= 100) {
-      answers.push('small');
-    }
-  }
-  return answers;
-};
+// const bigOrSmall = (arr) => {
+//   let answers = [];
+//   for (i = 0; i < arr.length; i++) {
+//     if (arr[i] > 100) {
+//       answers.push('big');
+//     } else if (arr[i] <= 100) {
+//       answers.push('small');
+//     }
+//   }
+//   return answers;
+// };
 
-const arrayEvaluator = bigOrSmall(bigOrSmallArray);
-console.log(arrayEvaluator);
+// const arrayEvaluator = bigOrSmall(bigOrSmallArray);
+// console.log(arrayEvaluator);
 
 ////////////////// PROBLEM 16 ////////////////////
 let contestants = [
@@ -284,13 +284,22 @@ let contestants = [
   'Clove',
   'Marvel',
 ];
-let loser = 'Glimmer';
+let loser = 'Cato';
 /*
   Write a function that is called theEliminator, which takes in two arguments, contestants (which will each be an array of strings), and loser (which will be a string).
   The function should loop over the array of contestant names. If the loser string appears in the array, splice it out. Return the new contestants array.
 */
 
-//CODE HERE
+function theEliminator(alive, dead) {
+  for (i = 0; i < alive.length; i++) {
+    if (alive[i] === dead) {
+      alive.splice(i, 1);
+      return alive;
+    }
+  }
+}
+
+console.log(theEliminator(contestants, loser));
 
 ////////////////// PROBLEM 17 ////////////////////
 let sampleString = 'Hi, my name is Kylo.';
